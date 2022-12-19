@@ -5,8 +5,8 @@ typedef struct Node Node;
 
 struct Node{
     int data;
-    struct Node* next;
-    struct Node* prev;
+    Node* next;
+    Node* prev;
 };
 
 Node *head;
@@ -76,6 +76,7 @@ void creating_entire_doubly_linked_list(){
         printf("Invalid Number for creation of doubly linked list\n");
         return;
     }
+    printf("\n");
     printf("Enter the data for the node 1:\t");
     scanf("%d",&data);
     add_to_empty_list(data);
@@ -83,6 +84,7 @@ void creating_entire_doubly_linked_list(){
         printf("Enter the data for the node %d:\t",i + 1);
         scanf("%d",&data);
         insert_at_the_end_of_doubly_linked_list(data);
+        printf("\n");
     }
 }
 

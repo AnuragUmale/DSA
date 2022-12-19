@@ -5,7 +5,7 @@ typedef struct Node Node;
 
 struct Node{
     int data;
-    struct Node* link;
+    Node* link;
 };
 
 Node *head;
