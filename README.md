@@ -4,5 +4,7 @@
   <ol>
     <li>Singly Linked List</li>
     <li>Doubly Linked List</li>
+    <li>Circular Linked List</li>
+    <li>Extras</li>
   </ol>
 </ol>
