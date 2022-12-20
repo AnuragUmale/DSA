@@ -57,6 +57,10 @@ void insert_at_the_nth_position_of_doubly_linked_list(int data, int position){
         insert_at_the_beginning_doubly_linked_list(data);
         return;
     }
+    if(position<= 0){
+        printf("Invalid Position\n");
+        return;
+    }
     while(pos > 2){
         temp_1 = temp_1->next;
         pos--;
@@ -84,11 +88,16 @@ void creating_entire_doubly_linked_list(){
         printf("Enter the data for the node %d:\t",i + 1);
         scanf("%d",&data);
         insert_at_the_end_of_doubly_linked_list(data);
-        printf("\n");
     }
 }
 
 void deleting_first_node_of_doubly_linked_list(){
+    head = head->next;
+    free(head->prev);
+    head->prev = NULL;
+}
+
+void deleting_last_node_of_doubly_linked_list(){ 
     Node *temp_1 = head;
     Node *temp_2 = NULL;
     while(temp_1->next != NULL){
@@ -100,15 +109,13 @@ void deleting_first_node_of_doubly_linked_list(){
     temp_1 = NULL;
 }
 
-void deleting_last_node_of_doubly_linked_list(){
-    head = head->next;
-    free(head->prev);
-    head->prev = NULL;
-}
-
 void deleting_nth_node_of_doubly_linked_list(int position){
     Node *temp_1 = head;
     Node *temp_2 = NULL;
+    if(position <=0){
+        printf("Invalid Position\n");
+        return;
+    }
     if(position == 1){
         deleting_first_node_of_doubly_linked_list();
         return;
@@ -146,7 +153,7 @@ void reversing_doubly_linked_list(){
 void printing_the_elements_in_forward_for_doubly_linked_list(){
     Node *temp = head;
     while(temp != NULL){
-        printf("%d", temp->data);
+        printf("%d ", temp->data);
         temp = temp->next;
     }
     printf("\n");
@@ -160,7 +167,7 @@ void printing_the_elements_in_reverse_for_doubly_linked_list(){
         temp = temp->next;
     }
     while(temp != NULL){
-        printf("%d", temp->data);
+        printf("%d ", temp->data);
         temp = temp->prev;
     }
     printf("\n");
