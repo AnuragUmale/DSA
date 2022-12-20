@@ -130,16 +130,16 @@ void delete_nth_node_circular_singly_linked_list(int position){
         printf("Invalid Position\n");
         return;
     }
-    if(position == 1){
-        delete_first_node_circular_singly_linked_list();
-        return;
-    }
     if(tail_for_circular_singly_linked_list == NULL){
         return;
     }
     if(tail_for_circular_singly_linked_list->next == tail_for_circular_singly_linked_list){
         free(tail_for_circular_singly_linked_list);
         tail_for_circular_singly_linked_list = NULL;
+        return;
+    }
+    if(position == 1){
+        delete_first_node_circular_singly_linked_list();
         return;
     }
     node_circular_single *temp_1 = tail_for_circular_singly_linked_list->next;
