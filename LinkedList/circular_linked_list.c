@@ -233,6 +233,9 @@ void add_node_at_the_end_of_circular_doubly_linked_list(int data){
     }
 }
 void add_node_at_the_nth_position_of_circular_doubly_linked_list(int data, int position){
+    if(tail_for_circular_doubly_linked_list == NULL){
+        return;
+    }
     if(position <= 0){
         printf("Invalid Position\n");
         return;
@@ -242,9 +245,6 @@ void add_node_at_the_nth_position_of_circular_doubly_linked_list(int data, int p
         return;
     }
     node_circular_double *new_node = circular_doubly_linked_list(data);
-    if(tail_for_circular_doubly_linked_list == NULL){
-        return;
-    }
     node_circular_double *temp = tail_for_circular_doubly_linked_list->next;
     while(position > 2){
         temp = temp->next;
@@ -274,10 +274,10 @@ void delete_first_node_circular_doubly_linked_list(){
     free(temp);
 }
 void delete_last_node_circular_doubly_linked_list(){
-    node_circular_double *temp = tail_for_circular_doubly_linked_list->prev;
     if(tail_for_circular_doubly_linked_list == NULL){
         return;
     }
+    node_circular_double *temp = tail_for_circular_doubly_linked_list->prev;
     if(temp == tail_for_circular_doubly_linked_list){
         free(tail_for_circular_doubly_linked_list);
         tail_for_circular_doubly_linked_list = NULL;
