@@ -139,6 +139,7 @@ void reverse_linked_list_using_recurrsion_for_singly_linked_list(Node *p){
 int count_of_node_for_singly_linked_list(){
     if(head == NULL){
         printf("The Linked List is Empty!!\n");
+        return -1;
     }
     int count = 0;
     Node *temp = head;
@@ -152,6 +153,7 @@ int count_of_node_for_singly_linked_list(){
 void print_the_linked_list_for_singly_linked_list(){
     if(head == NULL){
         printf("The Linked List is Empty!!\n");
+        return;
     }
     Node *temp = head;
     while(temp != NULL){
