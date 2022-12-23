@@ -7,4 +7,8 @@
     <li>Circular Linked List</li>
     <li>Extras</li>
   </ol>
+  <li>Stack</li>
+  <ol>
+    <li>Array Implementation</li>
+  </ol>
 </ol>
