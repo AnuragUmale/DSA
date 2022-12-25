@@ -10,5 +10,13 @@
   <li>Stack</li>
   <ol>
     <li>Array Implementation</li>
+    <li>Linked List Implementation</li>
   </ol>
+  <li>Sorting</li>
+    <ol>
+      <li>Selection Sort</li>
+      <li>Bubble Sort</li>
+      <li>Insertion Sort</li>
+      <li>Merge Sort</li>
+    </ol>
 </ol>
