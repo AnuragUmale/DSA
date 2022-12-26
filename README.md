@@ -20,4 +20,9 @@
       <li>Merge Sort</li>
       <li>Quick Sort</li>
     </ol>
+    <li>Queue</li>
+    <ol>
+      <li>Circular Array Implementation</li>
+      <li>Linked List Implementation</li>
+    </ol>
 </ol>
