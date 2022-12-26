@@ -18,5 +18,6 @@
       <li>Bubble Sort</li>
       <li>Insertion Sort</li>
       <li>Merge Sort</li>
+      <li>Quick Sort</li>
     </ol>
 </ol>
