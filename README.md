@@ -25,4 +25,8 @@
       <li>Circular Array Implementation</li>
       <li>Linked List Implementation</li>
     </ol>
+    <li>Trees</li>
+    <ol>
+      <li>Binary Search Tree (BST)</li>
+    </ol>
 </ol>
