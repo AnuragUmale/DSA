@@ -51,6 +51,19 @@ int popped_value(node **top){
     return value; 
 }
 
+node *revrse_stack(node **top_1, int number){
+    node *top_2 = NULL, *top_3 = NULL;
+    for(int i = 0; i < number; i++){
+        push(&top_2,popped_value(top_1));
+    }
+    for(int i = 0; i < number; i++){
+        push(&top_3,popped_value(&top_2));
+    }
+    for(int i = 0; i < number; i++){
+        push(top_1,popped_value(&top_3));
+    }
+    return *top_1;
+}
 
 
 void print_stack(node **top){
@@ -68,7 +81,7 @@ void print_stack(node **top){
 
 
 int main(){
-    node *top_1 = NULL, *top_2 = NULL, *top_3 = NULL;
+    node *top_1 = NULL;
     int number,data;
     printf("Enter the total numbers you want to reverse:\t");
     scanf("%d", &number);
@@ -80,15 +93,7 @@ int main(){
     }
     print_stack(&top_1);
 
-    for(int i = 0; i < number; i++){
-        push(&top_2,popped_value(&top_1));
-    }
-    for(int i = 0; i < number; i++){
-        push(&top_3,popped_value(&top_2));
-    }
-    for(int i = 0; i < number; i++){
-        push(&top_1,popped_value(&top_3));
-    }
+    top_1 = revrse_stack(&top_1,number);    
     print_stack(&top_1);
     return 0;
 }
