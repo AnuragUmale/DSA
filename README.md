@@ -20,7 +20,7 @@
       <li>Merge Sort</li>
       <li>Quick Sort</li>
     </ol>
-    <li>Queue</li>
+  <li>Queue</li>
     <ol>
       <li>Circular Array Implementation</li>
       <li>Linked List Implementation</li>
@@ -28,5 +28,15 @@
     <li>Trees</li>
     <ol>
       <li>Binary Search Tree (BST)</li>
+    </ol>
+    <li>Application</li>
+    <ol>
+      <li>Linked List</li>
+      <ol>
+        <li>Polynomial Representation</li>
+        <li>Addition of two Polynomial</li>
+        <li>Addition of two Numbers</li>
+        <li>Multiplication of two Numbers</li>
+      </ol>
     </ol>
 </ol>
