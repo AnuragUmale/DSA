@@ -38,5 +38,10 @@
         <li>Addition of two Numbers</li>
         <li>Multiplication of two Numbers</li>
       </ol>
+      <li>Stack</li>
+      <ol>
+        <li>Finding Prime Factors in Decending Order</li>
+        <li>Decimal to Binary</li>
+      </ol>
     </ol>
 </ol>
