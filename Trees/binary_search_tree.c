@@ -34,6 +34,50 @@ binary_search_tree_node* insert_in_binary_search_tree(binary_search_tree_node* r
     return root;
 }
 
+int find_min_in_binary_search_tree_iterative_method(binary_search_tree_node *root){
+    if(root == NULL){
+        printf("The tree is empty\n");
+        return -1;
+    }
+    while(root->left != NULL){
+        root = root->left;
+    }
+    return root->data;
+}
+
+int find_max_in_binary_search_tree_iterative_method(binary_search_tree_node *root){
+    if(root == NULL){
+        printf("The tree is empty\n");
+        return -1;
+    }
+    while(root->right != NULL){
+        root = root->right;
+    }
+    return root->data;
+}
+
+int find_min_in_binary_search_tree_recurrsive_method(binary_search_tree_node *root){
+    if(root == NULL){
+        printf("The tree is empty\n");
+        return -1;
+    }
+    else if(root->left == NULL){
+        return root->data;
+    }
+    return find_min_in_binary_search_tree_recurrsive_method(root->left);
+}
+
+int find_max_in_binary_search_tree_recurrsive_method(binary_search_tree_node *root){
+    if(root == NULL){
+        printf("The tree is empty\n");
+        return -1;
+    }
+    else if(root->right == NULL){
+        return root->data;
+    }
+    return find_max_in_binary_search_tree_recurrsive_method(root->right);
+}
+
 bool search_in_binary_search_tree(binary_search_tree_node* root, int data){
     if(root == NULL){
         return false;
