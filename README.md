@@ -42,6 +42,10 @@
       <ol>
         <li>Finding Prime Factors in Decending Order</li>
         <li>Decimal to Binary</li>
+        <li>Infix to Postfix expression</li>
+        <li>Nested Brackets</li>
+        <li>Palindrome</li>
+        <li>Reverse a Stack Using 2 Temporary Stacks</li>
       </ol>
     </ol>
 </ol>
