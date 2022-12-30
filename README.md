@@ -30,6 +30,7 @@
       <li>Binary Search Tree (BST)</li>
         <ol>
           <li>Lever Order Traversal</li>
+          <li>Depth First Traversal (Preorder,Inorder,Postorder)</li>
         </ol>
     </ol>
     <li>Application</li>
@@ -49,6 +50,10 @@
         <li>Nested Brackets</li>
         <li>Palindrome</li>
         <li>Reverse a Stack Using 2 Temporary Stacks</li>
+      </ol>
+      <li>Tree</li>
+      <ol>
+        <li>Checking if given Tree is a Binary Tree or not</li>
       </ol>
     </ol>
 </ol>
