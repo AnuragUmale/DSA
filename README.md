@@ -28,6 +28,9 @@
     <li>Trees</li>
     <ol>
       <li>Binary Search Tree (BST)</li>
+        <ol>
+          <li>Lever Order Traversal</li>
+        </ol>
     </ol>
     <li>Application</li>
     <ol>
