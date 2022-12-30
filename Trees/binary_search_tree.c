@@ -10,6 +10,17 @@ struct binary_search_tree_node{
     binary_search_tree_node* right;
 };
 
+int max(int a, int b){
+    if(a > b){
+        return a;
+    }
+    else if(a < b){
+        return b;
+    }
+    else{
+        return a;
+    }
+}
 
 binary_search_tree_node* create_node_for_binary_search_tree(int data){
     binary_search_tree_node *new_node = (binary_search_tree_node*)malloc(sizeof(binary_search_tree_node));
@@ -76,6 +87,13 @@ int find_max_in_binary_search_tree_recurrsive_method(binary_search_tree_node *ro
         return root->data;
     }
     return find_max_in_binary_search_tree_recurrsive_method(root->right);
+}
+
+int find_height_of_binary_seach_tree(binary_search_tree_node *root){
+    if(root == NULL){
+        return -1;
+    }
+    return max(find_height_of_binary_seach_tree(root->left), find_height_of_binary_seach_tree(root->right)) + 1;
 }
 
 bool search_in_binary_search_tree(binary_search_tree_node* root, int data){
