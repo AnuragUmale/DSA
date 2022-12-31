@@ -47,7 +47,7 @@ bool is_sub_tree_lesser(struct Node *root, int value){
     }
     if(root->data <= value
     && is_sub_tree_lesser(root->left,value)
-    && is_sub_tree_lesser(root->left, value)){
+    && is_sub_tree_lesser(root->right, value)){
         return true;
     }
     else{
@@ -61,7 +61,7 @@ bool is_sub_tree_greater(struct Node *root, int value){
     }
     if(root->data > value
     && is_sub_tree_greater(root->left,value)
-    && is_sub_tree_greater(root->left, value)){
+    && is_sub_tree_greater(root->right, value)){
         return true;
     }
     else{
