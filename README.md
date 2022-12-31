@@ -53,7 +53,7 @@
       </ol>
       <li>Tree</li>
       <ol>
-        <li>Checking if given Tree is a Binary Tree or not</li>
+        <li>Checking If Given Binary Tree Is a Binary Search Tree or Not</li>
       </ol>
     </ol>
 </ol>
