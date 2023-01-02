@@ -9,9 +9,10 @@ struct Node{
 };
 
 
-struct Node* find_min(struct Node* root)
-{
-	while(root->left != NULL) root = root->left;
+struct Node* find_min(struct Node* root){
+	while(root->left != NULL){
+        root = root->left;
+    }
 	return root;
 }
 
@@ -39,16 +40,16 @@ struct Node* delete_node_in_binary_search_tree(struct Node* root, int data){
             temp_1 = NULL;
         }
         else if(root->right == NULL){
-            struct Node* temp = root;
+            struct Node* temp_2 = root;
             root = root->left;
-            free(temp);
-            temp = NULL;
+            free(temp_2);
+            temp_2 = NULL;
         }
         // Case 3: Two Children
         else{
-            struct Node *temp_2 = find_min(root->right);
-            root->data = temp_2->data;
-            root->right = delete_node_in_binary_search_tree(root->right,temp_2->data);
+            struct Node *temp_3 = find_min(root->right);
+            root->data = temp_3->data;
+            root->right = delete_node_in_binary_search_tree(root->right,temp_3->data);
 
         }
     }
